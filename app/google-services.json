@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "407100995845",
+    "project_id": "ubill-8005a",
+    "storage_bucket": "ubill-8005a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407100995845:android:6d05aa91401541129b9f6c",
+        "android_client_info": {
+          "package_name": "com.example.ubill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407100995845-g12qe8qaqsjtavb93bdg73n6a1g6lu8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkPs7gHNASCuwQ9YklpCmHP8ocGIJDDDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407100995845-g12qe8qaqsjtavb93bdg73n6a1g6lu8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

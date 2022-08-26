@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SavePDFActivity">
+
+    <FrameLayout
+        android:id="@+id/pdf_view"
+        android:layout_width="wrap_content"
+        android:layout_height="729dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="@string/pdf_header_tax_invoice"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="3mm" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_edited" />
+
+        <TextView
+            android:id="@+id/pdf_business_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="3mm"
+            tools:ignore="InOrMmUsage" />
+
+
+        <TextView
+            android:id="@+id/pdf_business_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="10mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/pdf_business_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="5mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_view_black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.2mm"
+                android:background="@drawable/round_view_white"
+                android:orientation="vertical"
+                tools:ignore="InOrMmUsage">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0mm"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4mm"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:text="@string/invoice_date_label"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="4mm"
+                        android:textStyle="bold"
+                        tools:ignore="InOrMmUsage" />
+
+                    <TextView
+                        android:id="@+id/pdf_invoice_date"
+                        android:layout_width="0mm"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="4mm" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryText" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="left"
+            android:text="@string/serial_number_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/item_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:paddingEnd="2mm"
+            android:text="@string/rate_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:text="@string/qty_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingLeft="4mm"
+            android:text="@string/taxable_value_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingLeft="3mm"
+            android:text="@string/tax_slab_tv"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:paddingRight="2mm"
+            android:text="@string/cgst_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:paddingRight="2mm"
+            android:text="@string/sgst_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saving"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pdf_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryText" />
+
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/total_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/pdf_total_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/pdf_total_taxable_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/pdf_total_cgst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/pdf_total_sgst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryText" />
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/total_amount_before_tax_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/pdf_total_amount_before_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/total_gst_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/pdf_total_gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/total_amount_label"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            android:textStyle="bold"
+            tools:ignore="InOrMmUsage" />
+
+        <TextView
+            android:id="@+id/pdf_total_amount_after_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="right"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+
+        <TextView
+            android:id="@+id/pdf_total_amount_in_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="4mm"
+            tools:ignore="InOrMmUsage" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0mm"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0.4mm"
+                android:layout_marginTop="0.4mm"
+                android:layout_marginEnd="0.2mm"
+                android:layout_marginBottom="0.4mm"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="0.5mm"
+                tools:ignore="InOrMmUsage">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/tnc"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="3mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/tnc2"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="3mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/enoe"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="3mm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0mm"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0.2mm"
+                android:layout_marginTop="0.4mm"
+                android:layout_marginRight="0.4mm"
+                android:layout_marginBottom="0.4mm"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="0.5mm"
+                tools:ignore="InOrMmUsage">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0mm"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="top"
+                    android:text="@string/certifying_particulars_true"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="3mm"
+                    tools:ignore="InOrMmUsage"/>
+
+                <TextView
+                    android:id="@+id/pdf_authorised_signatory"
+                    android:layout_width="match_parent"
+                    android:layout_height="0mm"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="right|bottom"
+                    android:text="@string/for_authorised_signatory"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="4mm"
+                    android:textStyle="bold"
+                    tools:ignore="InOrMmUsage"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/pdf_bill_page_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="2mm"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="3mm"
+            tools:ignore="InOrMmUsage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/tnc1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="3mm"
+            tools:ignore="InOrMmUsage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0mm"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4mm"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/customer_name_label"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="4mm"
+                android:textStyle="bold"
+                tools:ignore="InOrMmUsage"/>
+
+            <TextView
+                android:id="@+id/pdf_customer_name"
+                android:layout_width="0mm"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="serif"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="4mm"
+                tools:ignore="InOrMmUsage" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
